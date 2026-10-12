@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Приклад 1</title>
+
+<style>
+    body {
+        font-family: "Times New Roman", serif;
+        background: white;
+    }
+
+    table {
+        width: 96%;
+        margin: 20px auto;
+        border: 4px solid blue;
+        padding: 2px;
+        border-spacing: 2px;
+        table-layout: fixed;
+        font-size: 14px;
+    }
+
+    td {
+        border: 1px solid blue;
+        padding: 4px;
+        overflow-wrap: break-word;
+    }
+
+    .left {
+        background: #6495ed;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .gray {
+        background: #999999;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .blue {
+        background: #4169e1;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .green {
+        background: #80a878;
+    }
+
+    .darkgreen {
+        background: #38b477;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .yellow {
+        background: yellow;
+        text-align: center;
+    }
+
+    .orange {
+        background: orange;
+        text-align: center;
+    }
+
+    .bottom {
+        background: #ffe4b5;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .small {
+        font-size: 11px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .nested {
+        width: 100%;
+        margin: 0;
+        border: 2px solid green;
+        border-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .nested td {
+        border: 1px solid green;
+        padding: 2px;
+    }
+
+    .nested-title {
+        background: green;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<table>
+    <colgroup>
+        <col style="width:20%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:8%">
+        <col style="width:7%">
+        <col style="width:15%">
+        <col style="width:15%">
+        <col style="width:8%">
+        <col style="width:7%">
+    </colgroup>
+
+    <tr>
+        <td class="left" rowspan="3">Ширина 20%</td>
+        <td class="gray" colspan="8">
+            Головний заголовок.<br>
+            Ширина 80%
+        </td>
+    </tr>
+
+    <tr>
+        <td class="blue" colspan="2">
+            Заголовок 1<br>
+            <span class="small">ширина 20%, висота 50 пікс.</span>
+        </td>
+        <td class="blue" colspan="2">
+            Заголовок 2 ширина 15%
+        </td>
+        <td class="blue" colspan="2">
+            Заголовок 3 ширина 30%
+        </td>
+        <td class="blue" colspan="2">
+            Заголовок 4 ширина 15%
+        </td>
+    </tr>
+
+    <tr class="center">
+        <td class="gray">1</td>
+        <td class="gray">2</td>
+        <td class="gray">3</td>
+        <td class="gray">4</td>
+        <td class="gray">5</td>
+        <td class="gray">6</td>
+        <td class="gray">7</td>
+        <td class="gray">8</td>
+    </tr>
+
+    <tr>
+        <td class="darkgreen center" rowspan="4">1</td>
+        <td class="green">11</td>
+        <td class="green">12</td>
+        <td class="green">13</td>
+        <td class="orange center" rowspan="3">14</td>
+        <td class="yellow center" colspan="4">15</td>
+    </tr>
+
+    <tr>
+        <td class="yellow" colspan="3">16</td>
+        <td class="green">17</td>
+        <td class="green">18</td>
+        <td class="green">19</td>
+        <td class="green">20</td>
+    </tr>
+
+    <tr>
+        <td class="green">21</td>
+        <td class="green">22</td>
+        <td class="green">23</td>
+        <td class="green">24</td>
+        <td class="yellow center" colspan="2">25</td>
+        <td class="green">26</td>
+    </tr>
+
+    <tr>
+        <td colspan="3">
+            <table class="nested">
+                <tr>
+                    <td class="nested-title" colspan="3">
+                        Таблиці в таблиці
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </td>
+
+        <td class="green center">27</td>
+        <td class="green">28</td>
+        <td class="green">29</td>
+        <td class="green">30</td>
+        <td class="green">31</td>
+    </tr>
+
+    <tr>
+        <td class="bottom" colspan="8">Нижній заголовок</td>
+        <td class="bottom center">123</td>
+    </tr>
+</table>
+
+</body>
+</html>

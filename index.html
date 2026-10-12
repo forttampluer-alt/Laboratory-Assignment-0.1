@@ -3,95 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Посилання</title>
+    <title>Перелік робіт</title>
+
     <style>
-body{
-    margin:0;
-    min-height:100vh;
-    background:#182746 url("background.svg") center/cover fixed no-repeat;
-    color:#f3f5fa;
-    font-family:Arial, Helvetica, sans-serif;
-}
-.page{
-    width:min(1100px, 92%);
-    margin:0 auto;
-    padding:30px 0 70px;
-}
-h1{
-    text-align:center;
-    font-size:32px;
-    margin:0 0 28px;
-}
-h2{
-    font-size:21px;
-    margin:22px 0 10px;
-}
-h3{
-    font-size:18px;
-    margin:16px 0 8px;
-}
-</style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            color: black;
+        }
+
+        .page {
+            width: 90%;
+            min-height: 270px;
+            margin: 15px auto;
+            padding: 25px 5%;
+            box-sizing: border-box;
+            background-color: #e8bcbc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6200b5;
+            font-size: 28px;
+            margin: 5px 0 18px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #438c39;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            color: #00a82d;
+            font-size: 20px;
+            margin: 16px 0;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 18px;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
-<div class="page">
-    <h1>Посилання</h1>
+    <div class="page">
+        <h1>Перелік робіт</h1>
 
-    <div class="card">
-        <h2>Маркований список</h2>
+        <hr>
 
-        <h3>Звичайний список</h3>
+        <h2>Лабораторна робота 1,2</h2>
         <ul>
-            <li>Пункт списку 1</li>
-            <li>Пункт списку 2</li>
-            <li>Пункт списку 3</li>
-            <li>Пункт списку 4</li>
+            <li>
+                <a href="formatting.html">Форматування тексту</a>
+            </li>
+            <li>
+                <a href="links.html">Посилання</a>
+            </li>
         </ul>
 
-        <h3>Список посилань, що будуть відкриватись в окремому вікні</h3>
-        <ul>
-            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
-            <li><a href="https://udhtu.edu.ua/" target="_blank">УДУНТ</a></li>
-        </ul>
-
-        <h3>Список посилань, з різними видами маркерів</h3>
-        <ul style="list-style-type:circle;">
-            <li>Пункт списку 1</li>
-            <li>Пункт списку 2</li>
-        </ul>
-        <ul style="list-style-type:square;">
-            <li>Пункт списку 3</li>
-            <li>Пункт списку 4</li>
-        </ul>
+        <h2>Лабораторна робота 3</h2>
+<ul>
+    <li>
+        <a href="index%20lab3.html" style="color: black;">
+            Створення таблиць в HTML
+        </a>
+    </li>
+</ul>
     </div>
-
-    <div class="card">
-        <h2>Нумерований список</h2>
-
-        <h3>Звичайний список</h3>
-        <ol>
-            <li>Перший пункт</li>
-            <li>Другий пункт</li>
-            <li>Третій пункт</li>
-        </ol>
-
-        <h3>Список з певного значення</h3>
-        <ol type="I" start="8">
-            <li>Пункт списку 1</li>
-            <li>Пункт списку 2</li>
-            <li>Пункт списку 3</li>
-        </ol>
-
-        <div class="term">
-            <b>Тег</b> — це спеціальний символ розмітки, який застосовується для вставки різних елементів
-            на веб-сторінку: тексту, зображень, таблиць, посилань тощо, і для зміни їх виду.
-        </div>
-    </div>
-
-    <div class="top-links">
-        <a href="formatting.html">Перейти до сторінки «Форматування тексту»</a>
-    </div>
-</div>
-
-<a class="back" href="index.html">На головну</a>
-</body>
+ </body>
 </html>
+
